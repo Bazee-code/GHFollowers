@@ -11,6 +11,7 @@
 		FE0921D32C57B57700C20170 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0921D22C57B57700C20170 /* FavoritesListViewController.swift */; };
 		FE0921D52C57C0DD00C20170 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0921D42C57C0DD00C20170 /* GFButton.swift */; };
 		FE0921D92C57D3AF00C20170 /* GHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0921D82C57D3AF00C20170 /* GHTextField.swift */; };
+		FE0921DB2C57E2C400C20170 /* FollowersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0921DA2C57E2C400C20170 /* FollowersListViewController.swift */; };
 		FE7515572C579A880092C184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7515562C579A880092C184 /* AppDelegate.swift */; };
 		FE7515592C579A880092C184 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7515582C579A880092C184 /* SceneDelegate.swift */; };
 		FE7515602C579A890092C184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE75155F2C579A890092C184 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		FE0921D22C57B57700C20170 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		FE0921D42C57C0DD00C20170 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		FE0921D82C57D3AF00C20170 /* GHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHTextField.swift; sourceTree = "<group>"; };
+		FE0921DA2C57E2C400C20170 /* FollowersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListViewController.swift; sourceTree = "<group>"; };
 		FE7515532C579A880092C184 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7515562C579A880092C184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE7515582C579A880092C184 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				FE0921D22C57B57700C20170 /* FavoritesListViewController.swift */,
 				FE0921D42C57C0DD00C20170 /* GFButton.swift */,
 				FE0921D82C57D3AF00C20170 /* GHTextField.swift */,
+				FE0921DA2C57E2C400C20170 /* FollowersListViewController.swift */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				FE0921D12C57B52100C20170 /* SearchViewController.swift in Sources */,
 				FE0921D52C57C0DD00C20170 /* GFButton.swift in Sources */,
 				FE0921D92C57D3AF00C20170 /* GHTextField.swift in Sources */,
+				FE0921DB2C57E2C400C20170 /* FollowersListViewController.swift in Sources */,
 				FE7515572C579A880092C184 /* AppDelegate.swift in Sources */,
 				FE0921D32C57B57700C20170 /* FavoritesListViewController.swift in Sources */,
 				FE7515592C579A880092C184 /* SceneDelegate.swift in Sources */,

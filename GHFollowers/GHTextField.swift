@@ -36,6 +36,7 @@ class GHTextField: UITextField {
         translatesAutoresizingMaskIntoConstraints = false
         
         placeholder = "Enter a username"
+        returnKeyType = .go
     }
 
 }

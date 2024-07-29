@@ -19,7 +19,7 @@ class SearchViewController: UIViewController {
         view.backgroundColor = .systemBlue
         configureLogoImageView()
         configureTextFieldView()
-        configureButton()
+        configureCallToActionButton()
         createDismissKeyboard()
     }
     
@@ -31,6 +31,13 @@ class SearchViewController: UIViewController {
     func createDismissKeyboard(){
         let tap = UITapGestureRecognizer(target: self.view, action:#selector(UIView.endEditing(_:)))
         view.addGestureRecognizer(tap)
+    }
+    
+    @objc func pushFollowersListViewController(){
+        let followersListVC = FollowersListViewController()
+        followersListVC.username = usernameTextField.text
+        followersListVC.title = usernameTextField.text
+        navigationController?.pushViewController(followersListVC, animated:true)
     }
     
     func configureLogoImageView(){
@@ -48,6 +55,7 @@ class SearchViewController: UIViewController {
     
     func configureTextFieldView(){
         view.addSubview(usernameTextField)
+        usernameTextField.delegate = self
         
         NSLayoutConstraint.activate([
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
@@ -57,8 +65,9 @@ class SearchViewController: UIViewController {
         ])
     }
     
-    func configureButton(){
+    func configureCallToActionButton(){
         view.addSubview(callToActionButton)
+        callToActionButton.addTarget(self, action: #selector(pushFollowersListViewController), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             callToActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
@@ -69,4 +78,11 @@ class SearchViewController: UIViewController {
         
     }
 
+}
+
+extension SearchViewController:UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("clicked me")
+        return true
+    }
 }
